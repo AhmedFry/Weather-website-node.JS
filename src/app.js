@@ -10,6 +10,8 @@ publicDir = path.join(__dirname,'../public')
 viewsPath=path.join(__dirname,'../tmp/views')
 partialsPath = path.join(__dirname , '../tmp/partials')
 
+const port = process.env.PORT || 3000
+
 //config
 app.set('views',viewsPath)
 app.set('view engine', 'hbs')
@@ -86,6 +88,6 @@ app.get('*',(req,res)=>{
 })
 
 
-app.listen(3000 , ()=>{
-    console.log ("I'm listening from port 3000 ")
+app.listen(port , ()=>{
+    console.log ("I'm listening from port "+ port)
 })
