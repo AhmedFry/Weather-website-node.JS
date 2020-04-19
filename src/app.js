@@ -10,7 +10,7 @@ publicDir = path.join(__dirname,'../public')
 viewsPath=path.join(__dirname,'../tmp/views')
 partialsPath = path.join(__dirname , '../tmp/partials')
 
-
+//config
 app.set('views',viewsPath)
 app.set('view engine', 'hbs')
 hbs.registerPartials(partialsPath)
